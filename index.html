@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "iR7EECxaVFJwa9FN_",
+      });
+   })();
+</script>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Alyan.</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-image">
+            <img src="Snapchat-300270157.jpg" alt="Profile Picture" class="profile-img">
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm M.Alyan Arshad</h1>
+            <h3>Frontend Developer</h3>
+            <p>I'm a passionate Frontend Developer creating modern and responsive web applications</p>
+            <div class="btn-box">
+                <a href="#contact">Hire Me</a>
+                <a href="#contact">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="https://www.facebook.com/share/14DfsCHnoMV/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-alyan-arshad-1a7408271/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B7UxwfjRLRqqjfgUyAR5Y6A%3D%3D"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://x.com/Ahmer635/photo"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com/alyanarsh_425?igsh=MW9pMHhoajFnMHluNg=="><i class='bx bxl-instagram'></i></a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <h3>Frontend Developer</h3>
+            <p>I'm a dedicated Frontend Developer with a passion for crafting user-friendly and visually appealing web applications. With expertise in modern web technologies, I strive to deliver seamless digital experiences.</p>
+            <div class="about-details">
+                <div class="details-item">
+                    <h4>Skills</h4>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="details-item">
+                    <h4>Experience</h4>
+                    <ul>
+                        <li>2+ years in Frontend Development</li>
+                        <li>Built 10+ responsive websites</li>
+                        <li>Collaborated on 5+ team projects</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn-box">
+                <a href="#contact">Contact Me</a>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="services-content">
+            <h2>My Services</h2>
+            <p>Explore the range of services I offer to bring your ideas to life with cutting-edge web solutions.</p>
+            <div class="services-grid">
+                <div class="service-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Development</h3>
+                    <p>Building responsive and dynamic websites using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="service-box">
+                    <i class='bx bx-brush'></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive and visually appealing user interfaces for optimal user experience.</p>
+                </div>
+                <div class="service-box">
+                    <i class='bx bx-mobile'></i>
+                    <h3>Mobile Optimization</h3>
+                    <p>Ensuring seamless performance across all devices with mobile-first design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-content">
+            <h2>My Portfolio</h2>
+            <p>Check out some of my recent projects showcasing my skills in frontend development.</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                    <div class="portfolio-overlay">
+                        <h3>Project 1</h3>
+                        <p>A responsive e-commerce website built with React and CSS.</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                    <div class="portfolio-overlay">
+                        <h3>Project 2</h3>
+                        <p>A portfolio website with modern animations and responsive design.</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                    <div class="portfolio-overlay">
+                        <h3>Project 3</h3>
+                        <p>A dashboard application with interactive charts and data visualization.</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaborations or inquiries!</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="from_name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="from_email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="btn-box">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
